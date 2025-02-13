@@ -18,7 +18,7 @@ const authenticate = (req, res, next) => {
 
   const payload = verifyToken(token, "JWT_SECRET")
 
-  req.user = payload
+  req.user = payload;
 
   next()
 };
